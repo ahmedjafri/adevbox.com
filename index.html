@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
     
     <!-- Title -->
-    <title>BILAL</title>
+    <title>ADevBox</title>
   </head>
   <body>
 
@@ -445,14 +445,14 @@
     
         <!-- Brand -->
         <a class="navbar-brand" href="./index.html">
-          <span class="text-primary">BILAL</span>
+          <span class="text-primary">ADevBox</span>
         </a>
     
     
           <!-- Button -->
-          <a class="navbar-btn btn btn-sm btn-primary lift ms-auto" href="https://forms.gle/jZoMbpebnFXqwxu38" target="_blank">
+          <!-- <a class="navbar-btn btn btn-sm btn-primary lift ms-auto" href="https://forms.gle/jZoMbpebnFXqwxu38" target="_blank">
             Reserve Now
-          </a>
+          </a> -->
     
         </div>
     
@@ -461,36 +461,208 @@
 
     <!-- WELCOME -->
     <section class="pt-4 pt-md-11">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-5 col-lg-6 order-md-2">
-
-            <!-- Image -->
-            <img src="assets/img/illustrations/illustration-2.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100">
-
-          </div>
-          <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
-
-            <!-- Heading -->
-            <h1 class="display-3 text-center text-md-start">
-              <span class="text-primary">BILAL</span> Azan.
-            </h1>
-
-            <!-- Text -->
-            <p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">
-              The modern Muslim's home azan.
-            </p>
-
-            <!-- Buttons -->
-            <div class="text-center text-md-start">
-              <a href="https://forms.gle/jZoMbpebnFXqwxu38" class="btn btn-primary shadow lift me-1">
-                Reserve Now <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
-              </a>
-            </div>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
+      <div id='product-component-1693116967163'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: '483534-2.myshopify.com',
+      storefrontAccessToken: 'bcd51b2bff26f041ac4340a3f216aeca',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '8542863753524',
+        node: document.getElementById('product-component-1693116967163'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        },
+        "text-align": "left"
+      },
+      "title": {
+        "font-size": "26px"
+      },
+      "button": {
+        "font-family": "Gill Sans, sans-serif",
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px",
+        ":hover": {
+          "background-color": "#2e55d3"
+        },
+        "background-color": "#335eea",
+        ":focus": {
+          "background-color": "#2e55d3"
+        }
+      },
+      "quantityInput": {
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px"
+      },
+      "price": {
+        "font-size": "18px"
+      },
+      "compareAt": {
+        "font-size": "15.299999999999999px"
+      },
+      "unitPrice": {
+        "font-size": "15.299999999999999px"
+      }
+    },
+    "buttonDestination": "checkout",
+    "layout": "horizontal",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "description": true
+    },
+    "width": "100%",
+    "text": {
+      "button": "Buy now"
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Gill Sans, sans-serif",
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px",
+        ":hover": {
+          "background-color": "#2e55d3"
+        },
+        "background-color": "#335eea",
+        ":focus": {
+          "background-color": "#2e55d3"
+        }
+      },
+      "quantityInput": {
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px"
+      },
+      "title": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "bold",
+        "font-size": "26px",
+        "color": "#4c4c4c"
+      },
+      "price": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "normal",
+        "font-size": "18px",
+        "color": "#4c4c4c"
+      },
+      "compareAt": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "normal",
+        "font-size": "15.299999999999999px",
+        "color": "#4c4c4c"
+      },
+      "unitPrice": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "normal",
+        "font-size": "15.299999999999999px",
+        "color": "#4c4c4c"
+      }
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Gill Sans, sans-serif",
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px",
+        ":hover": {
+          "background-color": "#2e55d3"
+        },
+        "background-color": "#335eea",
+        ":focus": {
+          "background-color": "#2e55d3"
+        }
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Checkout"
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Gill Sans, sans-serif",
+        "background-color": "#335eea",
+        ":hover": {
+          "background-color": "#2e55d3"
+        },
+        ":focus": {
+          "background-color": "#2e55d3"
+        }
+      },
+      "count": {
+        "font-size": "16px"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
     </section>
 
     <!-- FEATURES -->
@@ -501,16 +673,16 @@
 
             <!-- Icon -->
             <div class="icon text-primary mb-3">
-              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M3.515 18.657l9.9-9.9a1 1 0 011.413 0l1.415 1.415a1 1 0 010 1.414l-9.9 9.9a1 1 0 01-1.414 0L3.515 20.07a1 1 0 010-1.414z" fill="#335EEA" opacity=".3"/><path d="M9.879 6.636l3.535-3.535a1 1 0 011.414 0l7.071 7.07a1 1 0 010 1.415l-3.535 3.535a1 1 0 01-1.414 0l-7.071-7.07a1 1 0 010-1.415z" fill="#335EEA"/><path d="M17.303 4.868l.707-.707a.5.5 0 01.708 0l2.12 2.121a.5.5 0 010 .708l-.706.707a.5.5 0 01-.707 0l-2.122-2.122a.5.5 0 010-.707z" fill="#335EEA" opacity=".3"/></g></svg>            </div>
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><rect fill="#335EEA" opacity=".3" x="11.5" y="2" width="2" height="4" rx="1"/><rect fill="#335EEA" opacity=".3" x="11.5" y="16" width="2" height="5" rx="1"/><path d="M15.493 8.044a2.933 2.933 0 00-1.093-.846c-.45-.209-.883-.313-1.301-.313-.215 0-.434.019-.655.057-.222.038-.422.11-.599.218a1.48 1.48 0 00-.447.418c-.12.172-.18.39-.18.656 0 .228.047.418.143.57.095.152.234.285.417.399.184.114.403.218.656.314.253.095.538.193.855.294.456.152.931.32 1.425.504a5.33 5.33 0 011.349.731c.405.304.741.68 1.007 1.13.266.45.399 1.01.399 1.682 0 .773-.142 1.44-.428 2.005a3.997 3.997 0 01-1.149 1.396 4.926 4.926 0 01-1.653.817 6.95 6.95 0 01-1.919.266 7.924 7.924 0 01-2.793-.503c-.9-.336-1.647-.814-2.242-1.435l2.128-2.166c.33.405.763.744 1.301 1.017.539.272 1.074.408 1.606.408.24 0 .475-.025.703-.076.228-.05.427-.133.598-.247.172-.114.308-.266.409-.456.101-.19.152-.418.152-.684 0-.253-.063-.469-.19-.646a1.856 1.856 0 00-.542-.485 4.362 4.362 0 00-.873-.399 44.91 44.91 0 00-1.188-.389c-.43-.14-.852-.304-1.263-.494a4.229 4.229 0 01-1.102-.732 3.388 3.388 0 01-.78-1.082c-.196-.425-.294-.941-.294-1.549 0-.747.152-1.387.456-1.919a3.964 3.964 0 011.197-1.311 5.142 5.142 0 011.672-.75 7.581 7.581 0 011.881-.238c.76 0 1.536.14 2.327.418.792.279 1.486.69 2.081 1.235l-2.071 2.185z" fill="#335EEA"/></g></svg>            </div>
 
             <!-- Heading -->
             <h3>
-              Built for Azan
+              No Monthly Payment
             </h3>
 
             <!-- Text -->
             <p class="text-muted mb-6 mb-md-0">
-              Bilal is built solely to introduce an azan into your home.
+              Never pay again for storing your pictures and videos on IMGBox.
             </p>
 
           </div>
@@ -518,16 +690,16 @@
 
             <!-- Icon -->
             <div class="icon text-primary mb-3">
-              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M5.5 4h4A1.5 1.5 0 0111 5.5v1A1.5 1.5 0 019.5 8h-4A1.5 1.5 0 014 6.5v-1A1.5 1.5 0 015.5 4zm9 12h4a1.5 1.5 0 011.5 1.5v1a1.5 1.5 0 01-1.5 1.5h-4a1.5 1.5 0 01-1.5-1.5v-1a1.5 1.5 0 011.5-1.5z" fill="#335EEA"/><path d="M5.5 10h4a1.5 1.5 0 011.5 1.5v7A1.5 1.5 0 019.5 20h-4A1.5 1.5 0 014 18.5v-7A1.5 1.5 0 015.5 10zm9-6h4A1.5 1.5 0 0120 5.5v7a1.5 1.5 0 01-1.5 1.5h-4a1.5 1.5 0 01-1.5-1.5v-7A1.5 1.5 0 0114.5 4z" fill="#335EEA" opacity=".3"/></g></svg>            </div>
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M3.515 18.657l9.9-9.9a1 1 0 011.413 0l1.415 1.415a1 1 0 010 1.414l-9.9 9.9a1 1 0 01-1.414 0L3.515 20.07a1 1 0 010-1.414z" fill="#335EEA" opacity=".3"/><path d="M9.879 6.636l3.535-3.535a1 1 0 011.414 0l7.071 7.07a1 1 0 010 1.415l-3.535 3.535a1 1 0 01-1.414 0l-7.071-7.07a1 1 0 010-1.415z" fill="#335EEA"/><path d="M17.303 4.868l.707-.707a.5.5 0 01.708 0l2.12 2.121a.5.5 0 010 .708l-.706.707a.5.5 0 01-.707 0l-2.122-2.122a.5.5 0 010-.707z" fill="#335EEA" opacity=".3"/></g></svg>            </div>
 
             <!-- Heading -->
             <h3>
-              Designed to be modern
+              Built for Pictures
             </h3>
 
             <!-- Text -->
             <p class="text-muted mb-6 mb-md-0">
-              Designed to fit into a modern home. Bilal feels minimal and beautiful.
+              The hardware is optimized for storing pictures and videos.
             </p>
 
           </div>
@@ -544,7 +716,7 @@
 
             <!-- Text -->
             <p class="text-muted mb-0">
-              Bilal is built with the latest technology to be lean and reliable. Bilal does not need to connect to the cloud to work. 
+              AI powered face detection and search. All local, data never leaves your IMGBox. 
             </p>
 
           </div>
@@ -570,36 +742,12 @@
 
                 <!-- Heading -->
                 <h4 class="text-white">
-                  Does Bilal need to connect to the internet?
+                  Does IMGBox need to connect to the internet?
                 </h4>
 
                 <!-- Text -->
                 <p class="text-muted mb-6 mb-md-8">
-                  No. Bilal can be configured using your phone over Bluetooth.
-                </p>
-
-              </div>
-
-            </div>
-
-            <!-- Item -->
-            <div class="d-flex">
-
-              <!-- Badge -->
-              <div class="badge badge-lg badge-rounded-circle bg-success">
-                <span>?</span>
-              </div>
-
-              <div class="ms-5">
-
-                <!-- Heading -->
-                <h4 class="text-white">
-                  Is Bilal battery powered?
-                </h4>
-
-                <!-- Text -->
-                <p class="text-muted mb-6 mb-md-0">
-                  No. Bilal needs to be plugged into the wall. It’s designed to be inconspicuous so it can be placed in a hidden location.
+                  No. IMGBox can run locally on your home network without ever talking to the internet. 
                 </p>
 
               </div>
@@ -619,43 +767,13 @@
 
               <div class="ms-5">
 
-                <!-- Heading -->
                 <h4 class="text-white">
-                  How is Bilal different from traditional Azan clocks?
-                </h4>
-
-                <!-- Text -->
-                <p class="text-muted mb-6 mb-md-8">
-                  We’ve found after conducting customer research that tradition azan clocks have several flaws including, <br />
-                  <br />
-                  - Low quality, e.g. speakers, build materials, etc. <br />
-                  - Not configurable, e.g. timings, azans, etc. <br />
-                  - Visually unappealing
-
-                </p>
-
-              </div>
-
-            </div>
-
-            <!-- Item -->
-            <div class="d-flex">
-
-              <!-- Badge -->
-              <div class="badge badge-lg badge-rounded-circle bg-success">
-                <span>?</span>
-              </div>
-
-              <div class="ms-5">
-
-                <!-- Heading -->
-                <h4 class="text-white">
-                  When will it be available?
+                  What software does IMGBox use?
                 </h4>
 
                 <!-- Text -->
                 <p class="text-muted mb-6 mb-md-0">
-                  We intend to start shipping Q2 2023. We’re almost full for reservations.
+                  IMGBox is powered by TrueNAS and Immich. TrueNAS is trusted by the majority of Fortune 500 companies. It's the world's most deployed storage platform. Immich is a photo backup solution with support for backup from iPhone, Android, Web, etc. IMGBox mirrors your pictures and videos across multiple drives for redundancy. Even if one drive dies, your data remains intact.
                 </p>
 
               </div>
@@ -674,11 +792,11 @@
           <div class="col-12 col-md-4 col-lg-3">
     
             <!-- Brand -->
-            <span class="text-primary">BILAL</span>
+            <span class="text-primary">IMGBox</span>
     
             <!-- Text -->
             <p class="text-gray-700 mb-2">
-              Azan for your home.
+              Save pictures without a monthly payment.
             </p>
     
             <!-- Social -->

@@ -1,732 +1,735 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <!-- Favicon -->
-    <!-- <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" /> -->
-    
-    <!-- Map CSS -->
-    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
-    
-    <!-- Libs CSS -->
-    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-    
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
-    
-    <!-- Title -->
-    <title>ADevBox - IMGBox</title>
-  </head>
-  <body>
 
-    <!-- MODALS -->
-    <!-- Example -->
-    <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-    
-            <!-- Close -->
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    
-            <!-- Image -->
-            <div class="text-center">
-              <img src="./assets/img/illustrations/illustration-1.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
-            </div>
-    
-            <!-- Heading -->
-            <h2 class="fw-bold text-center mb-1" id="modalExampleTitle">
-              Schedule a demo with us
-            </h2>
-    
-            <!-- Text -->
-            <p class="fs-lg text-center text-muted mb-6 mb-md-8">
-              We can help you solve company communication.
-            </p>
-    
-            <!-- Form -->
-            <form>
-              <div class="row">
-                <div class="col-12 col-md-6">
-    
-                  <!-- First name -->
-                  <div class="form-floating">
-                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
-                    <label for="registrationFirstNameModal">First name</label>
-                  </div>
-    
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Favicon -->
+  <!-- <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" /> -->
+  
+  <!-- Map CSS -->
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+  
+  <!-- Libs CSS -->
+  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+  
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+  
+  <!-- Title -->
+  <title>ADevBox - IMGBox</title>
+</head>
+
+<body>
+
+  <!-- MODALS -->
+  <!-- Example -->
+  <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+  
+          <!-- Close -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  
+          <!-- Image -->
+          <div class="text-center">
+            <img src="./assets/img/illustrations/illustration-1.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
+          </div>
+  
+          <!-- Heading -->
+          <h2 class="fw-bold text-center mb-1" id="modalExampleTitle">
+            Schedule a demo with us
+          </h2>
+  
+          <!-- Text -->
+          <p class="fs-lg text-center text-muted mb-6 mb-md-8">
+            We can help you solve company communication.
+          </p>
+  
+          <!-- Form -->
+          <form>
+            <div class="row">
+              <div class="col-12 col-md-6">
+  
+                <!-- First name -->
+                <div class="form-floating">
+                  <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
+                  <label for="registrationFirstNameModal">First name</label>
                 </div>
-                <div class="col-12 col-md-6">
-    
-                  <!-- Last name -->
-                  <div class="form-floating">
-                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
-                    <label for="registrationLastNameModal">Last name</label>
-                  </div>
-    
-                </div>
+  
               </div>
-              <div class="row">
-                <div class="col-12 col-md-6">
-    
+              <div class="col-12 col-md-6">
+  
+                <!-- Last name -->
+                <div class="form-floating">
+                  <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
+                  <label for="registrationLastNameModal">Last name</label>
+                </div>
+  
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6">
+  
+                <!-- Email -->
+                <div class="form-floating">
+                  <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
+                  <label for="registrationEmailModal">Email</label>
+                </div>
+  
+              </div>
+              <div class="col-12 col-md-6">
+  
+                <!-- Password -->
+                <div class="form-floating">
+                  <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
+                  <label for="registrationPasswordModal">Password</label>
+                </div>
+  
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+  
+                <!-- Submit -->
+                <button class="btn w-100 btn-primary mt-3 lift">
+                  Request a demo
+                </button>
+  
+              </div>
+            </div>
+          </form>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Signup: Horizontal  -->
+  <div class="modal fade" id="modalSignupHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupHorizontalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="card card-row">
+          <div class="row gx-0">
+            <div class="col-12 col-md-6 bg-cover card-img-start" style="background-image: url(./assets/img/photos/photo-8.jpg);">
+  
+              <!-- Image (placeholder) -->
+              <img src="./assets/img/photos/photo-8.jpg" alt="..." class="img-fluid d-md-none invisible">
+  
+              <!-- Shape -->
+              <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            </div>
+  
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card-body">
+  
+                <!-- Close -->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  
+                <!-- Heading -->
+                <h2 class="mb-0 fw-bold text-center" id="modalSignupHorizontalTitle">
+                  Sign Up
+                </h2>
+  
+                <!-- Text -->
+                <p class="mb-6 text-center text-muted">
+                  Simplify your workflow in minutes.
+                </p>
+  
+                <!-- Form -->
+                <form class="mb-6">
+  
                   <!-- Email -->
-                  <div class="form-floating">
-                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
-                    <label for="registrationEmailModal">Email</label>
+                  <div class="form-group">
+                    <label class="visually-hidden" for="modalSignupHorizontalEmail">
+                      Your email
+                    </label>
+                    <input type="email" class="form-control" id="modalSignupHorizontalEmail" placeholder="Your email">
                   </div>
-    
-                </div>
-                <div class="col-12 col-md-6">
-    
+  
                   <!-- Password -->
-                  <div class="form-floating">
-                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
-                    <label for="registrationPasswordModal">Password</label>
+                  <div class="form-group mb-5">
+                    <label class="visually-hidden" for="modalSignupHorizontalPassword">
+                      Create a password
+                    </label>
+                    <input type="password" class="form-control" id="modalSignupHorizontalPassword" placeholder="Create a password">
                   </div>
-    
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-    
+  
                   <!-- Submit -->
-                  <button class="btn w-100 btn-primary mt-3 lift">
-                    Request a demo
+                  <button class="btn w-100 btn-primary" type="submit">
+                    Sign up
                   </button>
-    
-                </div>
+  
+                </form>
+  
+                <!-- Text -->
+                <p class="mb-0 fs-sm text-center text-muted">
+                  Already have an account? <a href="./signin-illustration.html">Log in</a>.
+                </p>
+  
               </div>
-            </form>
-    
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Signup: Horizontal  -->
-    <div class="modal fade" id="modalSignupHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupHorizontalTitle" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="card card-row">
-            <div class="row gx-0">
-              <div class="col-12 col-md-6 bg-cover card-img-start" style="background-image: url(./assets/img/photos/photo-8.jpg);">
-    
-                <!-- Image (placeholder) -->
-                <img src="./assets/img/photos/photo-8.jpg" alt="..." class="img-fluid d-md-none invisible">
-    
-                <!-- Shape -->
-                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
-                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            </div>
-    
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="card-body">
-    
-                  <!-- Close -->
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    
-                  <!-- Heading -->
-                  <h2 class="mb-0 fw-bold text-center" id="modalSignupHorizontalTitle">
-                    Sign Up
-                  </h2>
-    
-                  <!-- Text -->
-                  <p class="mb-6 text-center text-muted">
-                    Simplify your workflow in minutes.
-                  </p>
-    
-                  <!-- Form -->
-                  <form class="mb-6">
-    
-                    <!-- Email -->
-                    <div class="form-group">
-                      <label class="visually-hidden" for="modalSignupHorizontalEmail">
-                        Your email
-                      </label>
-                      <input type="email" class="form-control" id="modalSignupHorizontalEmail" placeholder="Your email">
-                    </div>
-    
-                    <!-- Password -->
-                    <div class="form-group mb-5">
-                      <label class="visually-hidden" for="modalSignupHorizontalPassword">
-                        Create a password
-                      </label>
-                      <input type="password" class="form-control" id="modalSignupHorizontalPassword" placeholder="Create a password">
-                    </div>
-    
-                    <!-- Submit -->
-                    <button class="btn w-100 btn-primary" type="submit">
-                      Sign up
-                    </button>
-    
-                  </form>
-    
-                  <!-- Text -->
-                  <p class="mb-0 fs-sm text-center text-muted">
-                    Already have an account? <a href="./signin-illustration.html">Log in</a>.
-                  </p>
-    
-                </div>
-              </div>
-    
-            </div> <!-- / .row -->
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Signup: Vertical  -->
-    <div class="modal fade" id="modalSignupVertical" tabindex="-1" role="dialog" aria-labelledby="modalSignupVerticalTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="card">
-    
-            <!-- Close -->
-            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
-    
-            <!-- Image -->
-            <img src="./assets/img/photos/photo-7.jpg" alt="..." class="card-img-top">
-    
-            <!-- Shape -->
-            <div class="position-relative">
-              <div class="shape shape-bottom shape-fluid-x text-white">
-                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>          </div>
             </div>
-    
-            <!-- Body -->
-            <div class="card-body">
-    
-              <!-- Heading -->
-              <h2 class="mb-0 fw-bold text-center" id="modalSignupVerticalTitle">
-                Sign Up
-              </h2>
-    
-              <!-- Text -->
-              <p class="mb-6 text-center text-muted">
-                Simplify your workflow in minutes.
-              </p>
-    
-              <!-- Form -->
-              <form class="mb-6">
-    
-                <!-- Email -->
-                <div class="form-group">
-                  <label class="visually-hidden" for="modalSignupVerticalEmail">
-                    Your email
-                  </label>
-                  <input type="email" class="form-control" id="modalSignupVerticalEmail" placeholder="Your email">
-                </div>
-    
-                <!-- Password -->
-                <div class="form-group mb-5">
-                  <label class="visually-hidden" for="modalSignupVerticalPassword">
-                    Create a password
-                  </label>
-                  <input type="password" class="form-control" id="modalSignupVerticalPassword" placeholder="Create a password">
-                </div>
-    
-                <!-- Submit -->
-                <button class="btn w-100 btn-primary" type="submit">
-                  Sign up
-                </button>
-    
-              </form>
-    
-              <!-- Text -->
-              <p class="mb-0 fs-sm text-center text-muted">
-                Already have an account? <a href="./signin-illustration.html">Log in</a>.
-              </p>
-    
-            </div>
-    
-          </div>
+  
+          </div> <!-- / .row -->
         </div>
       </div>
     </div>
-    
-    <!-- Signin: Horizontal  -->
-    <div class="modal fade" id="modalSigninHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSigninHorizontalTitle" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="card card-row">
-            <div class="row gx-0">
-              <div class="col-12 col-md-6 bg-cover card-img-start" style="background-image: url(./assets/img/photos/photo-1.jpg);">
-    
-                <!-- Image (placeholder) -->
-                <img src="./assets/img/photos/photo-1.jpg" alt="..." class="img-fluid d-md-none invisible">
-    
-                <!-- Shape -->
-                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
-                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            </div>
-    
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="card-body">
-    
-                  <!-- Close -->
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    
-                  <!-- Heading -->
-                  <h2 class="mb-0 fw-bold text-center" id="modalSigninHorizontalTitle">
-                    Sign In
-                  </h2>
-    
-                  <!-- Text -->
-                  <p class="mb-6 text-center text-muted">
-                    Simplify your workflow in minutes.
-                  </p>
-    
-                  <!-- Form -->
-                  <form class="mb-6">
-    
-                    <!-- Email -->
-                    <div class="form-group">
-                      <label class="visually-hidden" for="modalSigninHorizontalEmail">
-                        Your email
-                      </label>
-                      <input type="email" class="form-control" id="modalSigninHorizontalEmail" placeholder="Your email">
-                    </div>
-    
-                    <!-- Password -->
-                    <div class="form-group mb-5">
-                      <label class="visually-hidden" for="modalSigninHorizontalPassword">
-                        Enter your password
-                      </label>
-                      <input type="password" class="form-control" id="modalSigninHorizontalPassword" placeholder="Enter your password">
-                    </div>
-    
-                    <!-- Submit -->
-                    <button class="btn w-100 btn-primary" type="submit">
-                      Sign in
-                    </button>
-    
-                  </form>
-    
-                  <!-- Text -->
-                  <p class="mb-0 fs-sm text-center text-muted">
-                    Don't have an account yet? <a href="./signin-illustration.html">Sign up</a>.
-                  </p>
-    
-                </div>
-              </div>
-    
-            </div> <!-- / .row -->
+  </div>
+  
+  <!-- Signup: Vertical  -->
+  <div class="modal fade" id="modalSignupVertical" tabindex="-1" role="dialog" aria-labelledby="modalSignupVerticalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="card">
+  
+          <!-- Close -->
+          <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+  
+          <!-- Image -->
+          <img src="./assets/img/photos/photo-7.jpg" alt="..." class="card-img-top">
+  
+          <!-- Shape -->
+          <div class="position-relative">
+            <div class="shape shape-bottom shape-fluid-x text-white">
+              <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>          </div>
           </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Signin: Vertical  -->
-    <div class="modal fade" id="modalSigninVertical" tabindex="-1" role="dialog" aria-labelledby="modalSigninVerticalTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="card">
-    
-            <!-- Close -->
-            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
-    
-            <!-- Image -->
-            <img src="./assets/img/photos/photo-21.jpg" alt="..." class="card-img-top">
-    
-            <!-- Shape -->
-            <div class="position-relative">
-              <div class="shape shape-bottom shape-fluid-x text-white">
-                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>          </div>
-            </div>
-    
-            <!-- Body -->
-            <div class="card-body">
-    
-              <!-- Heading -->
-              <h2 class="mb-0 fw-bold text-center" id="modalSigninVerticalTitle">
-                Sign In
-              </h2>
-    
-              <!-- Text -->
-              <p class="mb-6 text-center text-muted">
-                Simplify your workflow in minutes.
-              </p>
-    
-              <!-- Form -->
-              <form class="mb-6">
-    
-                <!-- Email -->
-                <div class="form-group">
-                  <label class="visually-hidden" for="modalSigninVerticalEmail">
-                    Your email
-                  </label>
-                  <input type="email" class="form-control" id="modalSigninVerticalEmail" placeholder="Your email">
-                </div>
-    
-                <!-- Password -->
-                <div class="form-group mb-5">
-                  <label class="visually-hidden" for="modalSigninVerticalPassword">
-                    Enter your password
-                  </label>
-                  <input type="password" class="form-control" id="modalSigninVerticalPassword" placeholder="Enter your password">
-                </div>
-    
-                <!-- Submit -->
-                <button class="btn w-100 btn-primary" type="submit">
-                  Sign in
-                </button>
-    
-              </form>
-    
-              <!-- Text -->
-              <p class="mb-0 fs-sm text-center text-muted">
-                Don't have an account yet? <a href="./signin-illustration.html">Sign up</a>.
-              </p>
-    
-            </div>
-    
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Payment -->
-    <div class="modal fade" id="modalPayment" tabindex="-1" role="dialog" aria-labelledby="modalPaymentTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-    
-            <!-- Close -->
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    
+  
+          <!-- Body -->
+          <div class="card-body">
+  
             <!-- Heading -->
-            <h2 class="fw-bold text-center mb-1" id="modalPaymentTitle">
-              Add Payment
+            <h2 class="mb-0 fw-bold text-center" id="modalSignupVerticalTitle">
+              Sign Up
             </h2>
-    
+  
             <!-- Text -->
-            <p class="fs-lg text-center text-muted mb-6 mb-md-8">
+            <p class="mb-6 text-center text-muted">
               Simplify your workflow in minutes.
             </p>
-    
+  
             <!-- Form -->
-            <form>
-    
-              <!-- Name -->
+            <form class="mb-6">
+  
+              <!-- Email -->
               <div class="form-group">
-                <label class="form-label" for="modalPaymentName">Name on card</label>
-                <input class="form-control" id="modalPaymentName" type="text" placeholder="First Last">
+                <label class="visually-hidden" for="modalSignupVerticalEmail">
+                  Your email
+                </label>
+                <input type="email" class="form-control" id="modalSignupVerticalEmail" placeholder="Your email">
               </div>
-    
-              <!-- Name -->
-              <div class="form-group">
-                <label class="form-label" for="modalPaymentNumbber">Card number</label>
-                <input class="form-control" id="modalPaymentNumbber" type="number" placeholder="4242 4242 4242 4242">
+  
+              <!-- Password -->
+              <div class="form-group mb-5">
+                <label class="visually-hidden" for="modalSignupVerticalPassword">
+                  Create a password
+                </label>
+                <input type="password" class="form-control" id="modalSignupVerticalPassword" placeholder="Create a password">
               </div>
-    
-              <!-- Name -->
-              <div class="form-group">
-                <label class="form-label" for="modalPaymentDate">Exp. Date</label>
-                <input class="form-control" id="modalPaymentDate" type="text" placeholder="03/2023">
-              </div>
-    
+  
               <!-- Submit -->
-              <button class="btn w-100 btn-primary mt-3 lift">
-                Add Payment Method
+              <button class="btn w-100 btn-primary" type="submit">
+                Sign up
               </button>
-    
+  
             </form>
-    
+  
+            <!-- Text -->
+            <p class="mb-0 fs-sm text-center text-muted">
+              Already have an account? <a href="./signin-illustration.html">Log in</a>.
+            </p>
+  
           </div>
+  
         </div>
       </div>
     </div>
-
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <div class="container">
-    
-        <!-- Brand -->
-        <a class="navbar-brand" href="./index.html">
-          <span class="text-primary">ADevBox</span>
-        </a>
-    
-    
-          <!-- Button -->
-          <!-- <a class="navbar-btn btn btn-sm btn-primary lift ms-auto" href="https://forms.gle/jZoMbpebnFXqwxu38" target="_blank">
-            Reserve Now
-          </a> -->
-    
+  </div>
+  
+  <!-- Signin: Horizontal  -->
+  <div class="modal fade" id="modalSigninHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSigninHorizontalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="card card-row">
+          <div class="row gx-0">
+            <div class="col-12 col-md-6 bg-cover card-img-start" style="background-image: url(./assets/img/photos/photo-1.jpg);">
+  
+              <!-- Image (placeholder) -->
+              <img src="./assets/img/photos/photo-1.jpg" alt="..." class="img-fluid d-md-none invisible">
+  
+              <!-- Shape -->
+              <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            </div>
+  
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card-body">
+  
+                <!-- Close -->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  
+                <!-- Heading -->
+                <h2 class="mb-0 fw-bold text-center" id="modalSigninHorizontalTitle">
+                  Sign In
+                </h2>
+  
+                <!-- Text -->
+                <p class="mb-6 text-center text-muted">
+                  Simplify your workflow in minutes.
+                </p>
+  
+                <!-- Form -->
+                <form class="mb-6">
+  
+                  <!-- Email -->
+                  <div class="form-group">
+                    <label class="visually-hidden" for="modalSigninHorizontalEmail">
+                      Your email
+                    </label>
+                    <input type="email" class="form-control" id="modalSigninHorizontalEmail" placeholder="Your email">
+                  </div>
+  
+                  <!-- Password -->
+                  <div class="form-group mb-5">
+                    <label class="visually-hidden" for="modalSigninHorizontalPassword">
+                      Enter your password
+                    </label>
+                    <input type="password" class="form-control" id="modalSigninHorizontalPassword" placeholder="Enter your password">
+                  </div>
+  
+                  <!-- Submit -->
+                  <button class="btn w-100 btn-primary" type="submit">
+                    Sign in
+                  </button>
+  
+                </form>
+  
+                <!-- Text -->
+                <p class="mb-0 fs-sm text-center text-muted">
+                  Don't have an account yet? <a href="./signin-illustration.html">Sign up</a>.
+                </p>
+  
+              </div>
+            </div>
+  
+          </div> <!-- / .row -->
         </div>
-    
       </div>
-    </nav>
+    </div>
+  </div>
+  
+  <!-- Signin: Vertical  -->
+  <div class="modal fade" id="modalSigninVertical" tabindex="-1" role="dialog" aria-labelledby="modalSigninVerticalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="card">
+  
+          <!-- Close -->
+          <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+  
+          <!-- Image -->
+          <img src="./assets/img/photos/photo-21.jpg" alt="..." class="card-img-top">
+  
+          <!-- Shape -->
+          <div class="position-relative">
+            <div class="shape shape-bottom shape-fluid-x text-white">
+              <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>          </div>
+          </div>
+  
+          <!-- Body -->
+          <div class="card-body">
+  
+            <!-- Heading -->
+            <h2 class="mb-0 fw-bold text-center" id="modalSigninVerticalTitle">
+              Sign In
+            </h2>
+  
+            <!-- Text -->
+            <p class="mb-6 text-center text-muted">
+              Simplify your workflow in minutes.
+            </p>
+  
+            <!-- Form -->
+            <form class="mb-6">
+  
+              <!-- Email -->
+              <div class="form-group">
+                <label class="visually-hidden" for="modalSigninVerticalEmail">
+                  Your email
+                </label>
+                <input type="email" class="form-control" id="modalSigninVerticalEmail" placeholder="Your email">
+              </div>
+  
+              <!-- Password -->
+              <div class="form-group mb-5">
+                <label class="visually-hidden" for="modalSigninVerticalPassword">
+                  Enter your password
+                </label>
+                <input type="password" class="form-control" id="modalSigninVerticalPassword" placeholder="Enter your password">
+              </div>
+  
+              <!-- Submit -->
+              <button class="btn w-100 btn-primary" type="submit">
+                Sign in
+              </button>
+  
+            </form>
+  
+            <!-- Text -->
+            <p class="mb-0 fs-sm text-center text-muted">
+              Don't have an account yet? <a href="./signin-illustration.html">Sign up</a>.
+            </p>
+  
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Payment -->
+  <div class="modal fade" id="modalPayment" tabindex="-1" role="dialog" aria-labelledby="modalPaymentTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+  
+          <!-- Close -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  
+          <!-- Heading -->
+          <h2 class="fw-bold text-center mb-1" id="modalPaymentTitle">
+            Add Payment
+          </h2>
+  
+          <!-- Text -->
+          <p class="fs-lg text-center text-muted mb-6 mb-md-8">
+            Simplify your workflow in minutes.
+          </p>
+  
+          <!-- Form -->
+          <form>
+  
+            <!-- Name -->
+            <div class="form-group">
+              <label class="form-label" for="modalPaymentName">Name on card</label>
+              <input class="form-control" id="modalPaymentName" type="text" placeholder="First Last">
+            </div>
+  
+            <!-- Name -->
+            <div class="form-group">
+              <label class="form-label" for="modalPaymentNumbber">Card number</label>
+              <input class="form-control" id="modalPaymentNumbber" type="number" placeholder="4242 4242 4242 4242">
+            </div>
+  
+            <!-- Name -->
+            <div class="form-group">
+              <label class="form-label" for="modalPaymentDate">Exp. Date</label>
+              <input class="form-control" id="modalPaymentDate" type="text" placeholder="03/2023">
+            </div>
+  
+            <!-- Submit -->
+            <button class="btn w-100 btn-primary mt-3 lift">
+              Add Payment Method
+            </button>
+  
+          </form>
+  
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- WELCOME -->
-    <section class="pt-4 pt-md-11">
-      <div id='product-component-1693116967163'></div>
-<script type="text/javascript">
-/*<![CDATA[*/
-(function () {
-  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-  if (window.ShopifyBuy) {
-    if (window.ShopifyBuy.UI) {
-      ShopifyBuyInit();
-    } else {
-      loadScript();
-    }
-  } else {
-    loadScript();
-  }
-  function loadScript() {
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-    script.onload = ShopifyBuyInit;
-  }
-  function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: '483534-2.myshopify.com',
-      storefrontAccessToken: 'bcd51b2bff26f041ac4340a3f216aeca',
-    });
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('product', {
-        id: '8542863753524',
-        node: document.getElementById('product-component-1693116967163'),
-        moneyFormat: '%24%7B%7Bamount%7D%7D',
-        options: {
-  "product": {
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0",
-          "margin-bottom": "50px"
-        },
-        "text-align": "left"
-      },
-      "title": {
-        "font-size": "26px"
-      },
-      "button": {
-        "font-family": "Gill Sans, sans-serif",
-        "font-size": "16px",
-        "padding-top": "16px",
-        "padding-bottom": "16px",
-        ":hover": {
-          "background-color": "#2e55d3"
-        },
-        "background-color": "#335eea",
-        ":focus": {
-          "background-color": "#2e55d3"
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+  
+      <!-- Brand -->
+      <a class="navbar-brand" href="./index.html">
+        <span class="text-primary">ADevBox</span>
+      </a>
+  
+  
+        <!-- Button -->
+        <!-- <a class="navbar-btn btn btn-sm btn-primary lift ms-auto" href="https://forms.gle/jZoMbpebnFXqwxu38" target="_blank">
+          Reserve Now
+        </a> -->
+  
+      </div>
+  
+    </div>
+  </nav>
+
+  <!-- WELCOME -->
+  <section class="pt-4 pt-md-11">
+    <div id='product-component-1693116967163'></div>
+    <script type="text/javascript">
+      /*<![CDATA[*/
+      (function () {
+        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+        if (window.ShopifyBuy) {
+          if (window.ShopifyBuy.UI) {
+            ShopifyBuyInit();
+          } else {
+            loadScript();
+          }
+        } else {
+          loadScript();
         }
-      },
-      "quantityInput": {
-        "font-size": "16px",
-        "padding-top": "16px",
-        "padding-bottom": "16px"
-      },
-      "price": {
-        "font-size": "18px"
-      },
-      "compareAt": {
-        "font-size": "15.299999999999999px"
-      },
-      "unitPrice": {
-        "font-size": "15.299999999999999px"
-      }
-    },
-    "buttonDestination": "checkout",
-    "layout": "horizontal",
-    "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "description": true
-    },
-    "width": "100%",
-    "text": {
-      "button": "Buy now"
-    }
-  },
-  "productSet": {
-    "styles": {
-      "products": {
-        "@media (min-width: 601px)": {
-          "margin-left": "-20px"
+        function loadScript() {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = scriptURL;
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+          script.onload = ShopifyBuyInit;
         }
-      }
-    }
-  },
-  "modalProduct": {
-    "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "button": false,
-      "buttonWithQuantity": true
-    },
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0px",
-          "margin-bottom": "0px"
+        function ShopifyBuyInit() {
+          var client = ShopifyBuy.buildClient({
+            domain: '483534-2.myshopify.com',
+            storefrontAccessToken: 'bcd51b2bff26f041ac4340a3f216aeca',
+          });
+          ShopifyBuy.UI.onReady(client).then(function (ui) {
+            ui.createComponent('product', {
+              id: '8542863753524',
+              node: document.getElementById('product-component-1693116967163'),
+              moneyFormat: '%24%7B%7Bamount%7D%7D',
+              options: {
+                "product": {
+                  "styles": {
+                    "product": {
+                      "@media (min-width: 601px)": {
+                        "max-width": "100%",
+                        "margin-left": "0",
+                        "margin-bottom": "50px"
+                      },
+                      "text-align": "left"
+                    },
+                    "title": {
+                      "font-size": "26px"
+                    },
+                    "button": {
+                      "font-family": "Gill Sans, sans-serif",
+                      "font-size": "16px",
+                      "padding-top": "16px",
+                      "padding-bottom": "16px",
+                      ":hover": {
+                        "background-color": "#2e55d3"
+                      },
+                      "background-color": "#335eea",
+                      ":focus": {
+                        "background-color": "#2e55d3"
+                      }
+                    },
+                    "quantityInput": {
+                      "font-size": "16px",
+                      "padding-top": "16px",
+                      "padding-bottom": "16px"
+                    },
+                    "price": {
+                      "font-size": "18px"
+                    },
+                    "compareAt": {
+                      "font-size": "15.299999999999999px"
+                    },
+                    "unitPrice": {
+                      "font-size": "15.299999999999999px"
+                    }
+                  },
+                  "buttonDestination": "checkout",
+                  "layout": "horizontal",
+                  "contents": {
+                    "img": false,
+                    "imgWithCarousel": true,
+                    "description": true
+                  },
+                  "width": "100%",
+                  "text": {
+                    "button": "Buy now"
+                  }
+                },
+                "productSet": {
+                  "styles": {
+                    "products": {
+                      "@media (min-width: 601px)": {
+                        "margin-left": "-20px"
+                      }
+                    }
+                  }
+                },
+                "modalProduct": {
+                  "contents": {
+                    "img": false,
+                    "imgWithCarousel": true,
+                    "button": false,
+                    "buttonWithQuantity": true
+                  },
+                  "styles": {
+                    "product": {
+                      "@media (min-width: 601px)": {
+                        "max-width": "100%",
+                        "margin-left": "0px",
+                        "margin-bottom": "0px"
+                      }
+                    },
+                    "button": {
+                      "font-family": "Gill Sans, sans-serif",
+                      "font-size": "16px",
+                      "padding-top": "16px",
+                      "padding-bottom": "16px",
+                      ":hover": {
+                        "background-color": "#2e55d3"
+                      },
+                      "background-color": "#335eea",
+                      ":focus": {
+                        "background-color": "#2e55d3"
+                      }
+                    },
+                    "quantityInput": {
+                      "font-size": "16px",
+                      "padding-top": "16px",
+                      "padding-bottom": "16px"
+                    },
+                    "title": {
+                      "font-family": "Helvetica Neue, sans-serif",
+                      "font-weight": "bold",
+                      "font-size": "26px",
+                      "color": "#4c4c4c"
+                    },
+                    "price": {
+                      "font-family": "Helvetica Neue, sans-serif",
+                      "font-weight": "normal",
+                      "font-size": "18px",
+                      "color": "#4c4c4c"
+                    },
+                    "compareAt": {
+                      "font-family": "Helvetica Neue, sans-serif",
+                      "font-weight": "normal",
+                      "font-size": "15.299999999999999px",
+                      "color": "#4c4c4c"
+                    },
+                    "unitPrice": {
+                      "font-family": "Helvetica Neue, sans-serif",
+                      "font-weight": "normal",
+                      "font-size": "15.299999999999999px",
+                      "color": "#4c4c4c"
+                    }
+                  },
+                  "text": {
+                    "button": "Add to cart"
+                  }
+                },
+                "option": {},
+                "cart": {
+                  "styles": {
+                    "button": {
+                      "font-family": "Gill Sans, sans-serif",
+                      "font-size": "16px",
+                      "padding-top": "16px",
+                      "padding-bottom": "16px",
+                      ":hover": {
+                        "background-color": "#2e55d3"
+                      },
+                      "background-color": "#335eea",
+                      ":focus": {
+                        "background-color": "#2e55d3"
+                      }
+                    }
+                  },
+                  "text": {
+                    "total": "Subtotal",
+                    "button": "Checkout"
+                  }
+                },
+                "toggle": {
+                  "styles": {
+                    "toggle": {
+                      "font-family": "Gill Sans, sans-serif",
+                      "background-color": "#335eea",
+                      ":hover": {
+                        "background-color": "#2e55d3"
+                      },
+                      ":focus": {
+                        "background-color": "#2e55d3"
+                      }
+                    },
+                    "count": {
+                      "font-size": "16px"
+                    }
+                  }
+                }
+              },
+            });
+          });
         }
-      },
-      "button": {
-        "font-family": "Gill Sans, sans-serif",
-        "font-size": "16px",
-        "padding-top": "16px",
-        "padding-bottom": "16px",
-        ":hover": {
-          "background-color": "#2e55d3"
-        },
-        "background-color": "#335eea",
-        ":focus": {
-          "background-color": "#2e55d3"
-        }
-      },
-      "quantityInput": {
-        "font-size": "16px",
-        "padding-top": "16px",
-        "padding-bottom": "16px"
-      },
-      "title": {
-        "font-family": "Helvetica Neue, sans-serif",
-        "font-weight": "bold",
-        "font-size": "26px",
-        "color": "#4c4c4c"
-      },
-      "price": {
-        "font-family": "Helvetica Neue, sans-serif",
-        "font-weight": "normal",
-        "font-size": "18px",
-        "color": "#4c4c4c"
-      },
-      "compareAt": {
-        "font-family": "Helvetica Neue, sans-serif",
-        "font-weight": "normal",
-        "font-size": "15.299999999999999px",
-        "color": "#4c4c4c"
-      },
-      "unitPrice": {
-        "font-family": "Helvetica Neue, sans-serif",
-        "font-weight": "normal",
-        "font-size": "15.299999999999999px",
-        "color": "#4c4c4c"
-      }
-    },
-    "text": {
-      "button": "Add to cart"
-    }
-  },
-  "option": {},
-  "cart": {
-    "styles": {
-      "button": {
-        "font-family": "Gill Sans, sans-serif",
-        "font-size": "16px",
-        "padding-top": "16px",
-        "padding-bottom": "16px",
-        ":hover": {
-          "background-color": "#2e55d3"
-        },
-        "background-color": "#335eea",
-        ":focus": {
-          "background-color": "#2e55d3"
-        }
-      }
-    },
-    "text": {
-      "total": "Subtotal",
-      "button": "Checkout"
-    }
-  },
-  "toggle": {
-    "styles": {
-      "toggle": {
-        "font-family": "Gill Sans, sans-serif",
-        "background-color": "#335eea",
-        ":hover": {
-          "background-color": "#2e55d3"
-        },
-        ":focus": {
-          "background-color": "#2e55d3"
-        }
-      },
-      "count": {
-        "font-size": "16px"
-      }
-    }
-  }
-},
-      });
-    });
-  }
-})();
+      })();
 /*]]>*/
-</script>
-    </section>
+    </script>
+  </section>
 
-    <!-- FEATURES -->
-    <section class="py-8 py-md-11 border-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-4" data-aos="fade-up">
+  <!-- FEATURES -->
+  <section class="py-8 py-md-11 border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4" data-aos="fade-up">
 
-            <!-- Icon -->
-            <div class="icon text-primary mb-3">
-              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><rect fill="#335EEA" opacity=".3" x="11.5" y="2" width="2" height="4" rx="1"/><rect fill="#335EEA" opacity=".3" x="11.5" y="16" width="2" height="5" rx="1"/><path d="M15.493 8.044a2.933 2.933 0 00-1.093-.846c-.45-.209-.883-.313-1.301-.313-.215 0-.434.019-.655.057-.222.038-.422.11-.599.218a1.48 1.48 0 00-.447.418c-.12.172-.18.39-.18.656 0 .228.047.418.143.57.095.152.234.285.417.399.184.114.403.218.656.314.253.095.538.193.855.294.456.152.931.32 1.425.504a5.33 5.33 0 011.349.731c.405.304.741.68 1.007 1.13.266.45.399 1.01.399 1.682 0 .773-.142 1.44-.428 2.005a3.997 3.997 0 01-1.149 1.396 4.926 4.926 0 01-1.653.817 6.95 6.95 0 01-1.919.266 7.924 7.924 0 01-2.793-.503c-.9-.336-1.647-.814-2.242-1.435l2.128-2.166c.33.405.763.744 1.301 1.017.539.272 1.074.408 1.606.408.24 0 .475-.025.703-.076.228-.05.427-.133.598-.247.172-.114.308-.266.409-.456.101-.19.152-.418.152-.684 0-.253-.063-.469-.19-.646a1.856 1.856 0 00-.542-.485 4.362 4.362 0 00-.873-.399 44.91 44.91 0 00-1.188-.389c-.43-.14-.852-.304-1.263-.494a4.229 4.229 0 01-1.102-.732 3.388 3.388 0 01-.78-1.082c-.196-.425-.294-.941-.294-1.549 0-.747.152-1.387.456-1.919a3.964 3.964 0 011.197-1.311 5.142 5.142 0 011.672-.75 7.581 7.581 0 011.881-.238c.76 0 1.536.14 2.327.418.792.279 1.486.69 2.081 1.235l-2.071 2.185z" fill="#335EEA"/></g></svg>            </div>
+          <!-- Icon -->
+          <div class="icon text-primary mb-3">
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><rect fill="#335EEA" opacity=".3" x="11.5" y="2" width="2" height="4" rx="1"/><rect fill="#335EEA" opacity=".3" x="11.5" y="16" width="2" height="5" rx="1"/><path d="M15.493 8.044a2.933 2.933 0 00-1.093-.846c-.45-.209-.883-.313-1.301-.313-.215 0-.434.019-.655.057-.222.038-.422.11-.599.218a1.48 1.48 0 00-.447.418c-.12.172-.18.39-.18.656 0 .228.047.418.143.57.095.152.234.285.417.399.184.114.403.218.656.314.253.095.538.193.855.294.456.152.931.32 1.425.504a5.33 5.33 0 011.349.731c.405.304.741.68 1.007 1.13.266.45.399 1.01.399 1.682 0 .773-.142 1.44-.428 2.005a3.997 3.997 0 01-1.149 1.396 4.926 4.926 0 01-1.653.817 6.95 6.95 0 01-1.919.266 7.924 7.924 0 01-2.793-.503c-.9-.336-1.647-.814-2.242-1.435l2.128-2.166c.33.405.763.744 1.301 1.017.539.272 1.074.408 1.606.408.24 0 .475-.025.703-.076.228-.05.427-.133.598-.247.172-.114.308-.266.409-.456.101-.19.152-.418.152-.684 0-.253-.063-.469-.19-.646a1.856 1.856 0 00-.542-.485 4.362 4.362 0 00-.873-.399 44.91 44.91 0 00-1.188-.389c-.43-.14-.852-.304-1.263-.494a4.229 4.229 0 01-1.102-.732 3.388 3.388 0 01-.78-1.082c-.196-.425-.294-.941-.294-1.549 0-.747.152-1.387.456-1.919a3.964 3.964 0 011.197-1.311 5.142 5.142 0 011.672-.75 7.581 7.581 0 011.881-.238c.76 0 1.536.14 2.327.418.792.279 1.486.69 2.081 1.235l-2.071 2.185z" fill="#335EEA"/></g></svg>          </div>
 
-            <!-- Heading -->
-            <h3>
-              No Monthly Payment
-            </h3>
+          <!-- Heading -->
+          <h3>
+            No Monthly Payment
+          </h3>
 
-            <!-- Text -->
-            <p class="text-muted mb-6 mb-md-0">
-              Never pay again for storing your pictures and videos.
-            </p>
+          <!-- Text -->
+          <p class="text-muted mb-6 mb-md-0">
+            Never pay again for storing your pictures and videos.
+          </p>
 
-          </div>
-          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="50">
+        </div>
+        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="50">
 
-            <!-- Icon -->
-            <div class="icon text-primary mb-3">
-              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M3.515 18.657l9.9-9.9a1 1 0 011.413 0l1.415 1.415a1 1 0 010 1.414l-9.9 9.9a1 1 0 01-1.414 0L3.515 20.07a1 1 0 010-1.414z" fill="#335EEA" opacity=".3"/><path d="M9.879 6.636l3.535-3.535a1 1 0 011.414 0l7.071 7.07a1 1 0 010 1.415l-3.535 3.535a1 1 0 01-1.414 0l-7.071-7.07a1 1 0 010-1.415z" fill="#335EEA"/><path d="M17.303 4.868l.707-.707a.5.5 0 01.708 0l2.12 2.121a.5.5 0 010 .708l-.706.707a.5.5 0 01-.707 0l-2.122-2.122a.5.5 0 010-.707z" fill="#335EEA" opacity=".3"/></g></svg>            </div>
+          <!-- Icon -->
+          <div class="icon text-primary mb-3">
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M3.515 18.657l9.9-9.9a1 1 0 011.413 0l1.415 1.415a1 1 0 010 1.414l-9.9 9.9a1 1 0 01-1.414 0L3.515 20.07a1 1 0 010-1.414z" fill="#335EEA" opacity=".3"/><path d="M9.879 6.636l3.535-3.535a1 1 0 011.414 0l7.071 7.07a1 1 0 010 1.415l-3.535 3.535a1 1 0 01-1.414 0l-7.071-7.07a1 1 0 010-1.415z" fill="#335EEA"/><path d="M17.303 4.868l.707-.707a.5.5 0 01.708 0l2.12 2.121a.5.5 0 010 .708l-.706.707a.5.5 0 01-.707 0l-2.122-2.122a.5.5 0 010-.707z" fill="#335EEA" opacity=".3"/></g></svg>          </div>
 
-            <!-- Heading -->
-            <h3>
-              Built for Pictures
-            </h3>
+          <!-- Heading -->
+          <h3>
+            Built for Pictures
+          </h3>
 
-            <!-- Text -->
-            <p class="text-muted mb-6 mb-md-0">
-              I pick hardware optimized for storing pictures and videos.
-            </p>
+          <!-- Text -->
+          <p class="text-muted mb-6 mb-md-0">
+            I pick hardware optimized for storing pictures and videos.
+          </p>
 
-          </div>
-          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+        </div>
+        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
 
-            <!-- Icon -->
-            <div class="icon text-primary mb-3">
-              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M17.272 8.685a1 1 0 111.456-1.37l4 4.25a1 1 0 010 1.37l-4 4.25a1 1 0 01-1.456-1.37l3.355-3.565-3.355-3.565zm-10.544 0L3.373 12.25l3.355 3.565a1 1 0 01-1.456 1.37l-4-4.25a1 1 0 010-1.37l4-4.25a1 1 0 011.456 1.37z" fill="#335EEA"/><rect fill="#335EEA" opacity=".3" transform="rotate(15 12 12)" x="11" y="4" width="2" height="16" rx="1"/></g></svg>            </div>
+          <!-- Icon -->
+          <div class="icon text-primary mb-3">
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M17.272 8.685a1 1 0 111.456-1.37l4 4.25a1 1 0 010 1.37l-4 4.25a1 1 0 01-1.456-1.37l3.355-3.565-3.355-3.565zm-10.544 0L3.373 12.25l3.355 3.565a1 1 0 01-1.456 1.37l-4-4.25a1 1 0 010-1.37l4-4.25a1 1 0 011.456 1.37z" fill="#335EEA"/><rect fill="#335EEA" opacity=".3" transform="rotate(15 12 12)" x="11" y="4" width="2" height="16" rx="1"/></g></svg>          </div>
 
-            <!-- Heading -->
-            <h3>
-              Powered by modern tech
-            </h3>
+          <!-- Heading -->
+          <h3>
+            Powered by modern tech
+          </h3>
 
-            <!-- Text -->
-            <p class="text-muted mb-0">
-              Immich is under active development. It supports AI powered face detection and search. All the data is local, it never leaves your home. 
-            </p>
+          <!-- Text -->
+          <p class="text-muted mb-0">
+            Immich is under active development. It supports AI powered face detection and search. All the data is local,
+            it never leaves your home.
+          </p>
 
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </section>
 
-    <section class="pt-4 pt-md-11">
-      <div id='collection-component-1693285840471'></div>
-      <script type="text/javascript">
+  <section class="pt-4 pt-md-11">
+    <div id='collection-component-1693285840471'></div>
+    <script type="text/javascript">
       /*<![CDATA[*/
       (function () {
         var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
@@ -757,261 +760,274 @@
               node: document.getElementById('collection-component-1693285840471'),
               moneyFormat: '%24%7B%7Bamount%7D%7D',
               options: {
-        "product": {
-          "styles": {
-            "product": {
-              "@media (min-width: 601px)": {
-                "max-width": "calc(25% - 20px)",
-                "margin-left": "20px",
-                "margin-bottom": "50px",
-                "width": "calc(25% - 20px)"
+                "product": {
+                  "styles": {
+                    "product": {
+                      "@media (min-width: 601px)": {
+                        "max-width": "calc(25% - 20px)",
+                        "margin-left": "20px",
+                        "margin-bottom": "50px",
+                        "width": "calc(25% - 20px)"
+                      },
+                      "img": {
+                        "height": "calc(100% - 15px)",
+                        "position": "absolute",
+                        "left": "0",
+                        "right": "0",
+                        "top": "0"
+                      },
+                      "imgWrapper": {
+                        "padding-top": "calc(75% + 15px)",
+                        "position": "relative",
+                        "height": "0"
+                      }
+                    },
+                    "button": {
+                      "font-family": "Gill Sans, sans-serif",
+                      "font-size": "16px",
+                      "padding-top": "16px",
+                      "padding-bottom": "16px",
+                      ":hover": {
+                        "background-color": "#2e55d3"
+                      },
+                      "background-color": "#335eea",
+                      ":focus": {
+                        "background-color": "#2e55d3"
+                      }
+                    },
+                    "quantityInput": {
+                      "font-size": "16px",
+                      "padding-top": "16px",
+                      "padding-bottom": "16px"
+                    }
+                  },
+                  "buttonDestination": "modal",
+                  "contents": {
+                    "options": false
+                  },
+                  "text": {
+                    "button": "View product"
+                  }
+                },
+                "productSet": {
+                  "styles": {
+                    "products": {
+                      "@media (min-width: 601px)": {
+                        "margin-left": "-20px"
+                      }
+                    }
+                  }
+                },
+                "modalProduct": {
+                  "contents": {
+                    "img": false,
+                    "imgWithCarousel": true
+                  },
+                  "styles": {
+                    "product": {
+                      "@media (min-width: 601px)": {
+                        "max-width": "100%",
+                        "margin-left": "0px",
+                        "margin-bottom": "0px"
+                      }
+                    },
+                    "button": {
+                      "font-family": "Gill Sans, sans-serif",
+                      "font-size": "16px",
+                      "padding-top": "16px",
+                      "padding-bottom": "16px",
+                      ":hover": {
+                        "background-color": "#2e55d3"
+                      },
+                      "background-color": "#335eea",
+                      ":focus": {
+                        "background-color": "#2e55d3"
+                      }
+                    },
+                    "quantityInput": {
+                      "font-size": "16px",
+                      "padding-top": "16px",
+                      "padding-bottom": "16px"
+                    }
+                  },
+                  "text": {
+                    "button": "Add to cart"
+                  }
+                },
+                "option": {},
+                "cart": {
+                  "styles": {
+                    "button": {
+                      "font-family": "Gill Sans, sans-serif",
+                      "font-size": "16px",
+                      "padding-top": "16px",
+                      "padding-bottom": "16px",
+                      ":hover": {
+                        "background-color": "#2e55d3"
+                      },
+                      "background-color": "#335eea",
+                      ":focus": {
+                        "background-color": "#2e55d3"
+                      }
+                    }
+                  },
+                  "text": {
+                    "total": "Subtotal",
+                    "button": "Checkout"
+                  }
+                },
+                "toggle": {
+                  "styles": {
+                    "toggle": {
+                      "font-family": "Gill Sans, sans-serif",
+                      "background-color": "#335eea",
+                      ":hover": {
+                        "background-color": "#2e55d3"
+                      },
+                      ":focus": {
+                        "background-color": "#2e55d3"
+                      }
+                    },
+                    "count": {
+                      "font-size": "16px"
+                    }
+                  }
+                }
               },
-              "img": {
-                "height": "calc(100% - 15px)",
-                "position": "absolute",
-                "left": "0",
-                "right": "0",
-                "top": "0"
-              },
-              "imgWrapper": {
-                "padding-top": "calc(75% + 15px)",
-                "position": "relative",
-                "height": "0"
-              }
-            },
-            "button": {
-              "font-family": "Gill Sans, sans-serif",
-              "font-size": "16px",
-              "padding-top": "16px",
-              "padding-bottom": "16px",
-              ":hover": {
-                "background-color": "#2e55d3"
-              },
-              "background-color": "#335eea",
-              ":focus": {
-                "background-color": "#2e55d3"
-              }
-            },
-            "quantityInput": {
-              "font-size": "16px",
-              "padding-top": "16px",
-              "padding-bottom": "16px"
-            }
-          },
-          "buttonDestination": "modal",
-          "contents": {
-            "options": false
-          },
-          "text": {
-            "button": "View product"
-          }
-        },
-        "productSet": {
-          "styles": {
-            "products": {
-              "@media (min-width: 601px)": {
-                "margin-left": "-20px"
-              }
-            }
-          }
-        },
-        "modalProduct": {
-          "contents": {
-            "img": false,
-            "imgWithCarousel": true
-          },
-          "styles": {
-            "product": {
-              "@media (min-width: 601px)": {
-                "max-width": "100%",
-                "margin-left": "0px",
-                "margin-bottom": "0px"
-              }
-            },
-            "button": {
-              "font-family": "Gill Sans, sans-serif",
-              "font-size": "16px",
-              "padding-top": "16px",
-              "padding-bottom": "16px",
-              ":hover": {
-                "background-color": "#2e55d3"
-              },
-              "background-color": "#335eea",
-              ":focus": {
-                "background-color": "#2e55d3"
-              }
-            },
-            "quantityInput": {
-              "font-size": "16px",
-              "padding-top": "16px",
-              "padding-bottom": "16px"
-            }
-          },
-          "text": {
-            "button": "Add to cart"
-          }
-        },
-        "option": {},
-        "cart": {
-          "styles": {
-            "button": {
-              "font-family": "Gill Sans, sans-serif",
-              "font-size": "16px",
-              "padding-top": "16px",
-              "padding-bottom": "16px",
-              ":hover": {
-                "background-color": "#2e55d3"
-              },
-              "background-color": "#335eea",
-              ":focus": {
-                "background-color": "#2e55d3"
-              }
-            }
-          },
-          "text": {
-            "total": "Subtotal",
-            "button": "Checkout"
-          }
-        },
-        "toggle": {
-          "styles": {
-            "toggle": {
-              "font-family": "Gill Sans, sans-serif",
-              "background-color": "#335eea",
-              ":hover": {
-                "background-color": "#2e55d3"
-              },
-              ":focus": {
-                "background-color": "#2e55d3"
-              }
-            },
-            "count": {
-              "font-size": "16px"
-            }
-          }
-        }
-      },
             });
           });
         }
       })();
       /*]]>*/
-      </script>
-    </section>
+    </script>
+  </section>
 
-    <!-- FAQ -->
-    <section class="bg-dark" style="padding-bottom: 5rem;">
-      <div class="container pt-8 pt-md-11">
-        <div class="row">
-          <div class="col-12 col-md-6">
+  <!-- FAQ -->
+  <section class="bg-dark" style="padding-bottom: 5rem;">
+    <div class="container pt-8 pt-md-11">
+      <div class="row">
+        <div class="col-12 col-md-6">
 
-            <!-- Item -->
-            <div class="d-flex">
+          <!-- Item -->
+          <div class="d-flex">
 
-              <!-- Badge -->
-              <div class="badge badge-lg badge-rounded-circle bg-success">
-                <span>?</span>
-              </div>
+            <!-- Badge -->
+            <div class="badge badge-lg badge-rounded-circle bg-success">
+              <span>?</span>
+            </div>
 
-              <div class="ms-5">
+            <div class="ms-5">
 
-                <!-- Heading -->
-                <h4 class="text-white">
-                  Does IMGBox need to connect to the internet?
-                </h4>
+              <!-- Heading -->
+              <h4 class="text-white">
+                Does IMGBox need to connect to the internet?
+              </h4>
 
-                <!-- Text -->
-                <p class="text-muted mb-6 mb-md-8">
-                  No. IMGBox can run locally on your home network without ever talking to the internet. 
-                </p>
-
-              </div>
+              <!-- Text -->
+              <p class="text-muted mb-6 mb-md-8">
+                No. IMGBox can run locally on your home network without ever talking to the internet.
+              </p>
 
             </div>
 
           </div>
-          <div class="col-12 col-md-6">
 
-            <!-- Item -->
-            <div class="d-flex">
+        </div>
+        <div class="col-12 col-md-6">
 
-              <!-- Badge -->
-              <div class="badge badge-lg badge-rounded-circle bg-success">
-                <span>?</span>
-              </div>
+          <!-- Item -->
+          <div class="d-flex">
 
-              <div class="ms-5">
+            <!-- Badge -->
+            <div class="badge badge-lg badge-rounded-circle bg-success">
+              <span>?</span>
+            </div>
 
-                <h4 class="text-white">
-                  What software does IMGBox use?
-                </h4>
+            <div class="ms-5">
 
-                <!-- Text -->
-                <p class="text-muted mb-6 mb-md-0">
-                  IMGBox is powered by TrueNAS and Immich. TrueNAS is trusted by the majority of Fortune 500 companies. It's the world's most deployed storage platform. Immich is a photo backup solution with support for backup from iPhone, Android, Web, etc. IMGBox mirrors your pictures and videos across multiple drives for redundancy. Even if one drive dies, your data remains intact.
-                </p>
+              <h4 class="text-white">
+                What software does IMGBox use?
+              </h4>
 
-              </div>
+              <!-- Text -->
+              <p class="text-muted mb-6 mb-md-0">
+                IMGBox is powered by TrueNAS and Immich. TrueNAS is trusted by the majority of Fortune 500 companies.
+                It's the world's most deployed storage platform. Immich is a photo backup solution with support for
+                backup from iPhone, Android, Web, etc. IMGBox mirrors your pictures and videos across multiple drives
+                for redundancy. Even if one drive dies, your data remains intact.
+              </p>
 
             </div>
 
           </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
 
-    <!-- FOOTER -->
-    <footer class="py-8 py-md-11 bg-gray-200">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-4 col-lg-3">
-    
-            <!-- Brand -->
-            <span class="text-primary">IMGBox</span>
-    
-            <!-- Text -->
-            <p class="text-gray-700 mb-2">
-              Save pictures without a monthly payment.
-            </p>
-    
-            <!-- Social -->
-            <!-- <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
-              <li class="list-inline-item list-social-item me-3">
-                <a href="#!" class="text-decoration-none">
-                  <img src="./assets/img/icons/social/instagram.svg" class="list-social-icon" alt="...">
-                </a>
-              </li>
-              <li class="list-inline-item list-social-item me-3">
-                <a href="#!" class="text-decoration-none">
-                  <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
-                </a>
-              </li>
-              <li class="list-inline-item list-social-item me-3">
-                <a href="#!" class="text-decoration-none">
-                  <img src="./assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
-                </a>
-              </li>
-              <li class="list-inline-item list-social-item">
-                <a href="#!" class="text-decoration-none">
-                  <img src="./assets/img/icons/social/pinterest.svg" class="list-social-icon" alt="...">
-                </a>
-              </li>
-            </ul> -->
-    
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </footer>
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </section>
 
-    <!-- JAVASCRIPT -->
-    <!-- Map JS -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
-    
-    <!-- Vendor JS -->
-    <script src="./assets/js/vendor.bundle.js"></script>
-    
-    <!-- Theme JS -->
-    <script src="./assets/js/theme.bundle.js"></script>
+  <!-- FOOTER -->
+  <footer class="py-8 py-md-11 bg-gray-200">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-3">
+  
+          <!-- Brand -->
+          <span class="text-primary">IMGBox</span>
+  
+          <!-- Text -->
+          <p class="text-gray-700 mb-2">
+            Save pictures without a monthly payment.
+          </p>
+  
+          <!-- Social -->
+          <!-- <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+            <li class="list-inline-item list-social-item me-3">
+              <a href="#!" class="text-decoration-none">
+                <img src="./assets/img/icons/social/instagram.svg" class="list-social-icon" alt="...">
+              </a>
+            </li>
+            <li class="list-inline-item list-social-item me-3">
+              <a href="#!" class="text-decoration-none">
+                <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
+              </a>
+            </li>
+            <li class="list-inline-item list-social-item me-3">
+              <a href="#!" class="text-decoration-none">
+                <img src="./assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
+              </a>
+            </li>
+            <li class="list-inline-item list-social-item">
+              <a href="#!" class="text-decoration-none">
+                <img src="./assets/img/icons/social/pinterest.svg" class="list-social-icon" alt="...">
+              </a>
+            </li>
+          </ul> -->
+  
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </footer>
 
-  </body>
+  <!-- JAVASCRIPT -->
+  <!-- Map JS -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+  
+  <!-- Vendor JS -->
+  <script src="./assets/js/vendor.bundle.js"></script>
+  
+  <!-- Theme JS -->
+  <script src="./assets/js/theme.bundle.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y113PF8BN2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y113PF8BN2');
+  </script>
+
+</body>
+
 </html>
